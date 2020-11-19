@@ -25,8 +25,8 @@ const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const JD_API_HOST = "https://lkyl.dianpusoft.cn/api/";
 $.testTaskId = "1318106976846299138"; // 测试邀请任务
 $.token = [
-  $.getdata("jd_ddxw_token1") || "",
-  $.getdata("jd_ddxw_token2") || "",
+  $.getdata("jd_ddxw_token1") || "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJhMGQzZDVlNGMxMTZmYmE5MjhhMmM2NjgzZWVhZDhiYmFjNzM1Y2ZmODNmZWFlNjNjOWQ0YWEyNDI1ZTE5ODBmIiwiZXhwIjoxNjA1ODc0NTk4fQ.lUOqyTCJWg9S9DX8x76z1gR9xs-CNWgtucgJ5XkSdcc",
+  $.getdata("jd_ddxw_token2") || "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJhMGYzMDU3NzExNmYxMmZmNzQyMzM2NTJlZTlhZTUwMyIsImV4cCI6MTYwNTg3NTAxMH0.wjL11SrlNoFBuLyDwUwPMstWh0XnelDqJC5-cu7b63Q",
 ];
 $.result = [];
 $.cookieArr = [];
