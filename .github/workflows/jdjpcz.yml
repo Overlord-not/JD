@@ -6,7 +6,7 @@ name: 金牌厂长
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 * * * *'
+    - cron: '0 6 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: Overlord-not/JD
+          repository: Overlord-not/jd_scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【金牌厂长】'
         run: |
-          node jdjpcz.js
+          node jd_jxstory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
