@@ -1,12 +1,12 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 京东小窝
+name: 宠汪汪强制为好友助力
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 0 * * *'
+    - cron: '10 0 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -35,9 +35,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【东东小窝】'
+      - name: '运行 【宠物帮忙】'
         run: |
-          node jd_small_home.js
+          node jd_joy_help.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
