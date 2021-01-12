@@ -6,7 +6,7 @@ name: 宠汪汪强制为好友助力
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 0 * * *'
+    - cron: '18 0 * * *'
   watch:
     types: started
   repository_dispatch:
